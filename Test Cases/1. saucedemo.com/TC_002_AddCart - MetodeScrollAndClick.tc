@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_002_AddCart - MetodeScrollAndClick</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e09e4ab8-7f11-4e8f-8084-4ea30980d52c</testCaseGuid>
+</TestCaseEntity>

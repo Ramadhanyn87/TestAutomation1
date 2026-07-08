@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_002_AddCart - MetodeForAndIF</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67daf47b-4c1f-4c85-b34f-f1775ee01128</testCaseGuid>
+</TestCaseEntity>
