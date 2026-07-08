@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>4. IncreaseQuantity</name>
+   <name>16. btnSearchProduct</name>
    <tag></tag>
-   <elementGuidId>48b37cfc-5a60-4682-991b-b6aac5a84428</elementGuidId>
+   <elementGuidId>6f6f9b71-2c96-4922-a298-b23bbb58de7b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='quantity']</value>
+         <value>//button[@id='submit_search']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
