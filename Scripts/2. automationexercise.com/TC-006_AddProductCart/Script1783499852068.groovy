@@ -101,7 +101,7 @@ WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAI
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/12. ScrollProduct4'), 0)
 WebUI.mouseOver(findTestObject('2.Objectautomationexercise/BtProduct/12. ScrollProduct4'), FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(6)
-WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/13. DetailProduct4'))
+WebUI.enhancedClick(findTestObject('2.Objectautomationexercise/BtProduct/13. DetailProduct4'))
 //'Add Quantity and Cart'
 //WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), 3)
 //'Random Quantity'
