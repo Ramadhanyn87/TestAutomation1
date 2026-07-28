@@ -79,16 +79,20 @@ String CityDinamis = 'Jakarta Pusat' + Acak3
 String ZipDinamis = '1' + AcakZIP
 String NumberPhoneDinamis = '087' + digitBelakangNumber
 
-'Open Link'
-WebUI.openBrowser('https://automationexercise.com/')
-
+//'Open Link'
+//WebUI.openBrowser('https://automationexercise.com/')
+//'FullScreen Window'
+//WebUI.maximizeWindow()
 //WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
-'RefreshBuatNgilanginIklan'
-WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
 //WebUI.refresh()
 //WebUI.delay(2)
-'FullScreen Window'
-WebUI.maximizeWindow()
+
+'Open Web'
+WebUI.callTestCase(findTestCase('2. automationexercise.com/OpenWeb'), [:], FailureHandling.STOP_ON_FAILURE)
+
+'RefreshBuatNgilanginIklan'
+WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
+
 
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Halaman Utama Automation Exercise')
 

@@ -61,14 +61,15 @@ String InptEmail = dataGet.getValue('Sign Up Email', LastBaris)
 String InptPass = dataGet.getValue('Password', LastBaris)
 
 
-
 //WebUI.openBrowser('https://automationexercise.com/')
+//'FullScreen Window'
+//WebUI.maximizeWindow()
+
+'Open Web'
+WebUI.callTestCase(findTestCase('2. automationexercise.com/OpenWeb'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Buat Refresh Halaman'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//'FullScreen Window'
-//WebUI.maximizeWindow()
 
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Berhasil Akses Halaman Utama')
 

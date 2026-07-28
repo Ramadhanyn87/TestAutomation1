@@ -32,13 +32,13 @@ String emailAktif = dataGet.getValue('Sign Up Email', lastBaris)
 String emailTarget = "ramatest.6303@gmail.com"
 
 
-WebUI.openBrowser('https://automationexercise.com/')
+//WebUI.openBrowser('https://automationexercise.com/')
+//
+//'FullScreen Window'
+//WebUI.maximizeWindow()
 
 'Buat Refresh Halaman'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'FullScreen Window'
-WebUI.maximizeWindow()
 
 'NungguElementSignUpMuncul'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtDeleted/BuatDeleteAcct'), 3)

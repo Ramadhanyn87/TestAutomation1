@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.delay(4)
-WebUI.refresh()
-WebUI.delay(4)
+'Open Link'
+WebUI.openBrowser('https://automationexercise.com/')
+'FullScreen Window'
+WebUI.maximizeWindow()

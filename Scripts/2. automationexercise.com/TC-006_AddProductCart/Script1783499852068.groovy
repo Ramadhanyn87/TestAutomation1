@@ -30,33 +30,42 @@ Random rand1 = new Random()
 'Random AngkaAcak, Get Text'
 int AcakQuantity = rand1.nextInt(100) + 1
 
-'Open Link'
-WebUI.openBrowser('https://automationexercise.com/')
+//'Open Link'
+//WebUI.openBrowser('https://automationexercise.com/')
+//'FullScreen Window'
+//WebUI.maximizeWindow()
+
+//'Open Web'
+//WebUI.callTestCase(findTestCase('2. automationexercise.com/OpenWeb'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'RefreshBuatNgilanginIklan'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'FullScreen Window'
-WebUI.maximizeWindow()
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Setelah Logged On -> Klik Product')
 
 'NungguElementSignUpMuncul'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'), 3)
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'))
+
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Di Halaman Product')
 
 'RefreshBuatNgilanginIklan'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Product 1'
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/2. ScrollProduct1'), 0)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product1 Part 1')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/3. DetailProduct1'))
 'Add Quantity and Cart'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), 3)
 'Random Quantity'
 WebUI.setText(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), AcakQuantity.toString())
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product1 Part 2 (Add Quantity)')
 'Add Cart'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/5. btnAddCart'))
 
 'Continue Shopping'
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product1 Part 3 (Continue)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/6. btnContinueShopping'))
 'Balik Ke Product'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'))
@@ -65,15 +74,18 @@ WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAI
 
 'Product 2'
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/8. ScrollProduct2'), 0)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product2 Part 1')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/9. DetailProduct2'))
 'Add Quantity and Cart'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), 3)
 'Random Quantity'
 WebUI.setText(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), AcakQuantity.toString())
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product2 Part 2 (Add Quantity)')
 'Add Cart'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/5. btnAddCart'))
 
 'Continue Shopping'
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product2 Part 3 (Continue)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/6. btnContinueShopping'))
 'Balik Ke Product'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'))
@@ -82,15 +94,18 @@ WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAI
 
 'Product 3'
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/10. ScrollProduct3'), 0)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product3 Part 1')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/11. DetailProduct3'))
 'Add Quantity and Cart'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), 3)
 'Random Quantity'
 WebUI.setText(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), AcakQuantity.toString())
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product3 Part 2 (Add Quantity)')
 'Add Cart'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/5. btnAddCart'))
 
 'Continue Shopping'
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product3 Part 3 (Continue)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/6. btnContinueShopping'))
 'Balik Ke Product'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'))
@@ -99,7 +114,9 @@ WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAI
 
 'Product 4'
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/12. ScrollProduct4'), 0)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product4 Part 1')
 WebUI.mouseOver(findTestObject('2.Objectautomationexercise/BtProduct/12. ScrollProduct4'), FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product4 Part 2 (Add Quantity)')
 WebUI.delay(6)
 WebUI.enhancedClick(findTestObject('2.Objectautomationexercise/BtProduct/13. DetailProduct4'))
 //'Add Quantity and Cart'
@@ -108,6 +125,7 @@ WebUI.enhancedClick(findTestObject('2.Objectautomationexercise/BtProduct/13. Det
 //WebUI.setText(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), AcakQuantity.toString())
 
 'Continue Shopping'
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product4 Part 2 (Continue)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/6. btnContinueShopping'))
 'Scroll Ke Search Product'
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'), 0)
@@ -118,20 +136,26 @@ String Product5 = WebUI.getText(findTestObject('2.Objectautomationexercise/BtPro
 
 'Product5'
 WebUI.setText(findTestObject('2.Objectautomationexercise/BtProduct/15. SearchProduct'), Product5, FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product5 Part 1 -> (Search Product)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/16. btnSearchProduct'), FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/17. ScrollProduct5'), 0)
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product5 Part 2 -> (Product 5)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/18. DetailProduct5'))
 'Add Quantity and Cart'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), 3)
 'Random Quantity'
 WebUI.setText(findTestObject('2.Objectautomationexercise/BtProduct/4. AddQuantity'), AcakQuantity.toString())
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product5 Part 3 (Add Quantity)')
 'Add Cart'
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/5. btnAddCart'))
 'View Cart'
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Add Product5 Part 4 (View Cart)')
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/7. btnViewCart'))
 'RefreshBuatNgilanginIklan'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
 
+CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Berhasil ke Halaman Cart')
+CustomKeywords.'com.report.pdf.ManualPdfReporter.buatPdf'('(Evidence_Add Product To Cart)')
 
 //'Add Cart'
 //WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/5. btnAddCart'))

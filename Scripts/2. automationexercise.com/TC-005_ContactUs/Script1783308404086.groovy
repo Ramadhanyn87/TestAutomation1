@@ -29,14 +29,16 @@ int LastBaris = dataGet1.getRowNumbers()
 String InptName = dataGet1.getValue('Sign Up Name', LastBaris)
 String InptEmail = dataGet1.getValue('Sign Up Email', LastBaris)
 
-'Open Link'
-WebUI.openBrowser('https://automationexercise.com/')
+//'Open Link'
+//WebUI.openBrowser('https://automationexercise.com/')
+//'FullScreen Window'
+//WebUI.maximizeWindow()
+
+'Open Web'
+WebUI.callTestCase(findTestCase('2. automationexercise.com/OpenWeb'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'RefreshBuatNgilanginIklan'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'FullScreen Window'
-WebUI.maximizeWindow()
 
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Halaman Utama')
 
