@@ -155,7 +155,7 @@ WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/7. btnViewCart'
 WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Berhasil ke Halaman Cart')
-CustomKeywords.'com.report.pdf.ManualPdfReporter.buatPdf'('(Evidence_Add Product To Cart)')
+CustomKeywords.'com.report.pdf.ManualPdfReporter.buatPdf'('Evidence_Add Product To Cart')
 
 //'Add Cart'
 //WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/5. btnAddCart'))
