@@ -61,6 +61,7 @@ String InptEmail = dataGet.getValue('Sign Up Email', LastBaris)
 String InptPass = dataGet.getValue('Password', LastBaris)
 
 
+
 //WebUI.openBrowser('https://automationexercise.com/')
 //'FullScreen Window'
 //WebUI.maximizeWindow()
