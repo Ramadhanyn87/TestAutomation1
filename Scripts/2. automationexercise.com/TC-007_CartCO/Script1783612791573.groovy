@@ -73,7 +73,7 @@ WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAI
 
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Confirm Address')
 'Review Order'
-WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtCartCO/3. ScrollReviewOrder'), 0)
+WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtCartCO/3. ScrollReviewOrder'), 2)
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Confirm Order')
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtCartCO/4. ScrollTotalAmount'), 0)
 'Isi Komentar'
