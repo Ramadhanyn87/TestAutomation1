@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[@class='image']</value>
+         <value>//td[text()='Item']</value>
       </entry>
       <entry>
          <key>BASIC</key>
