@@ -27,3 +27,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow as XSSFRow
 
 'Login'
 WebUI.callTestCase(findTestCase('2. automationexercise.com/TC-002_SignIn'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
+'RefreshBuatNgilanginIklan'
+WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAILURE)
