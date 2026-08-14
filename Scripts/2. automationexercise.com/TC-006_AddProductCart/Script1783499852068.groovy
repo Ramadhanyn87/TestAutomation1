@@ -43,7 +43,7 @@ WebUI.callTestCase(findTestCase('BuatRefresh'), [:], FailureHandling.STOP_ON_FAI
 
 CustomKeywords.'com.report.pdf.ManualPdfReporter.tambahStep'('Setelah Logged On -> Klik Product')
 
-'NungguElementSignUpMuncul'
+'NungguElementProductMuncul'
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'), 3)
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/1. btnProduct'))
 
