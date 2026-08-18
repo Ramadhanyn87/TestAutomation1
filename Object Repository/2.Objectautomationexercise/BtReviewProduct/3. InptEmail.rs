@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>1. ScrollYourReview</name>
+   <name>3. InptEmail</name>
    <tag></tag>
-   <elementGuidId>0504f127-f058-4bab-adac-364f0833b2b4</elementGuidId>
+   <elementGuidId>0bec59b3-4acb-4cc6-b3e2-e6bcd365ac50</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//textarea[@id='review']</value>
+         <value>//input[@id='email']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

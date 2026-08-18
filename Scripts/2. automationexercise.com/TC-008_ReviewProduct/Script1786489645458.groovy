@@ -28,6 +28,17 @@ import org.apache.poi.xssf.usermodel.XSSFRow as XSSFRow
 //'Login'
 //WebUI.callTestCase(findTestCase('2. automationexercise.com/TC-002_SignIn'), [:], FailureHandling.STOP_ON_FAILURE)
 
+'======Awal Cara Pertama Buat Ngambil Data======'
+def dataGet = TestDataFactory.findTestData('Data Files/DataLoginExcel')
+int LastBaris = dataGet.getRowNumbers()
+
+String InptNama1 = dataGet.getValue('First Name', LastBaris)
+String InptNama2 = dataGet.getValue('Last Name', LastBaris)
+
+String InptNama = InptNama1 + ' ' + InptNama2
+String InptEmail = dataGet.getValue('Sign Up Email', LastBaris)
+
+
 'OpenWeb'
 WebUI.callTestCase(findTestCase('2. automationexercise.com/OpenWeb'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -49,6 +60,10 @@ WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/2. Sc
 WebUI.click(findTestObject('2.Objectautomationexercise/BtProduct/3. DetailProduct1'))
 WebUI.waitForElementVisible(findTestObject('2.Objectautomationexercise/BtReviewProduct/1. ScrollYourReview'), 3)
 WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtReviewProduct/1. ScrollYourReview'), 0)
+WebUI.setText(findTestObject('2.Objectautomationexercise/BtReviewProduct/2. InptName'), InptNama, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('2.Objectautomationexercise/BtReviewProduct/3. InptEmail'), InptEmail, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('2.Objectautomationexercise/BtReviewProduct/4. InptReview'), 'Apa yaa cobaa Test aja dulu', FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('2.Objectautomationexercise/BtReviewProduct/5. BtnReview'))
 
 //'Product 2'
 //WebUI.scrollToElement(findTestObject('2.Objectautomationexercise/BtProduct/8. ScrollProduct2'), 0)
